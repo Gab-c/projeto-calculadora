@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --color-01: #0678fbee;
+    --color-02: #00000078;
+    --color-03: #b5b5b5e4;
+}
+
+header {
+    background-color: var(--color-01);
+    color: white;
+    padding: 20px;
+}
+
+header > h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--color-02);
+}
+
+main {
+    position: relative;
+}
+
+main > p {
+    margin: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #00000025;
+}
+
+.cal {
+    position: absolute;
+    height: 315px;
+    width: 230px;
+    margin-top: 210px;
+    border: 1px solid black;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px var(--color-02);
+    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+}
+
+#visor {
+   height: 20px;
+   width: 188px;
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid black;
+   border-radius: 10px;
+   box-shadow: 2px 2px 2px var(--color-02);
+}
+
+.tab {
+    background-image: linear-gradient(to bottom, white, #0678fbee);
+    height: 254px;
+    width: 230px;
+    padding: 10px;
+}
+
+.botao {
+    font-size: 1.5em;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px var(--color-02);
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: var(--color-03);
+    color: white;
+    transition: .5s;
+}
+
+#bzero {
+    font-size: 1.5em;
+    height: 50px;
+    width: 90px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px var(--color-02);
+}
+
+#bzero:hover {
+    background-color: var(--color-03);
+    color: white;
+}
+
+footer {
+    background-image: linear-gradient(to top, white, rgba(173, 216, 230, 0.671));
+    color: var(--color-01);
+    font-weight: bolder;
+    margin-top: 400px;
+    padding: 5px;
+
+    text-align: center;
+}

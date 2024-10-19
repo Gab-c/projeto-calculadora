@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* >>>TABLET<<< */
+
+@media screen and (min-width: 768px) {
+ 
+    header {
+        background-color: var(--color-01);
+        color: white;
+        padding: 10px;
+    }
+    
+    header > h1 {
+        text-align: center;
+        text-shadow: 2px 2px 2px var(--color-02);
+    }
+    
+    footer {
+        background-image: linear-gradient(to top, white, rgba(173, 216, 230, 0.671));
+        color: var(--color-01);
+        font-weight: bolder;
+        margin-top: 350px;
+        padding: 5px;
+    
+        text-align: center;
+    }
+}
+
+/* >>>TELAS GRANDES<<< */
+
+@media screen and (min-width: 1024px) {
+    footer {
+        background-image: linear-gradient(to top, white, rgba(173, 216, 230, 0.671));
+        color: var(--color-01);
+        font-weight: bolder;
+        margin-top: 484px;
+        padding: 5px;
+    
+        text-align: center;
+    }
+}
